@@ -10,7 +10,7 @@ import altair as alt
 
 # Create a connection to the SQLite database
 #conn = sqlite3.connect('../../OneDrive/Desktop/Acad/Sem 5/DBMS/finapp.db')
-conn = sqlite3.connect('/finapp.db')
+conn = sqlite3.connect('finapp.db')
 c = conn.cursor()
 
 # Set the page title
