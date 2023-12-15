@@ -10,7 +10,7 @@ import altair as alt
 
 # Create a connection to the SQLite database
 #conn = sqlite3.connect('../../OneDrive/Desktop/Acad/Sem 5/DBMS/finapp.db')
-conn = sqlite3.connect('/root/Stock-Portfolio-Web-application/finapp.db')
+conn = sqlite3.connect('/finapp.db')
 c = conn.cursor()
 
 # Set the page title
@@ -271,7 +271,7 @@ if get_session_state() is not None:
             st.dataframe(log_returns)
 
     st.markdown("<hr>", unsafe_allow_html=True)
-    st.header('➕ Agregue una nueva acción a su portafolio')
+    st.header('�?Agregue una nueva acción a su portafolio')
     st.markdown("<hr>", unsafe_allow_html=True)
     ticker = st.text_input('Símbolo de ticker')
     shares = st.number_input('Número de acciones', min_value=1, step=1)
